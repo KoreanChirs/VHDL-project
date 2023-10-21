@@ -1,0 +1,190 @@
+
+*** Running vivado
+    with args -log main_code.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source main_code.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source main_code.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 393.914 ; gain = 68.562
+Command: link_design -top main_code -part xc7k70tfbv676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 798.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_p'. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:2]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:5]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K3' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:7]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:8]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J6' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L5' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:10]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:11]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y16' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:12]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA15' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB15' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C20' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'A21' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:20]
+CRITICAL WARNING: [Common 17-69] Command failed: 'D22' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:22]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E14' is not a valid site or package pin name. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:23]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'value', please type 'set_property -help' for usage info. [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc:32]
+Finished Parsing XDC File [C:/Users/user/Desktop/project_dnon/main_display_xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 915.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+
+7 Infos, 1 Warnings, 17 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 915.828 ; gain = 517.078
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 943.785 ; gain = 27.957
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c227aca5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1504.059 ; gain = 560.273
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1c0ff4c25
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.507 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1c0ff4c25
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.526 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 193431e31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.552 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 193431e31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.761 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 193431e31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.768 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 193431e31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.798 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               1  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1838.383 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2127b44f9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.836 . Memory (MB): peak = 1838.383 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2127b44f9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1838.383 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2127b44f9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1838.383 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1838.383 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2127b44f9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 1 Warnings, 17 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1838.383 ; gain = 922.555
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1838.383 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/dgist/project_2/project_2.runs/impl_1/main_code_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file main_code_drc_opted.rpt -pb main_code_drc_opted.pb -rpx main_code_drc_opted.rpx
+Command: report_drc -file main_code_drc_opted.rpt -pb main_code_drc_opted.pb -rpx main_code_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/dgist/project_2/project_2.runs/impl_1/main_code_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC BIVB-1] Bank IO standard Support: Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported for banks of type High Performance.  Move the following ports or change their properties:  
+an[0], an[1], an[2] and an[3]
+ERROR: [DRC BIVB-1] Bank IO standard Support: Bank 34 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported for banks of type High Performance.  Move the following ports or change their properties:  
+Start
+INFO: [Vivado_Tcl 4-198] DRC finished with 2 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 1 Warnings, 17 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 22:38:27 2022...
